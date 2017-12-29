@@ -1,0 +1,93 @@
+// Styling for the contact section
+section#contact {
+    background-color: $gray-900;
+    background-image: url("../img/map-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .section-heading {
+        color: $white;
+    }
+
+    .form-group {
+        margin-bottom: 25px;
+
+        input,
+        textarea {
+            padding: 20px;
+        }
+
+        input.form-control {
+            height: auto;
+        }
+
+        textarea.form-control {
+            height: 248px;
+        }
+    }
+
+    .form-control:focus {
+        border-color: $primary;
+        box-shadow: none;
+    }
+
+    ::-webkit-input-placeholder {
+        font-weight: 700;
+        color: $gray-400;
+
+        @include heading-font;
+    }
+
+    :-moz-placeholder {
+        font-weight: 700;
+        color: $gray-400;
+
+        /* Firefox 18- */
+        @include heading-font;
+    }
+
+    ::-moz-placeholder {
+        font-weight: 700;
+        color: $gray-400;
+
+        /* Firefox 19+ */
+        @include heading-font;
+    }
+
+    :-ms-input-placeholder {
+        font-weight: 700;
+        color: $gray-400;
+
+        @include heading-font;
+    }
+
+    input[type=text], input[type=email], input[type=tel], textarea {
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-image: none;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        box-shadow: none;
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .btn-solarized {
+      background-color: white !important;
+      color: $primary !important;
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: darken($primary, 7.5%) !important;
+        border-color: darken($primary, 7.5%) !important;
+        color: white !important;
+      }
+    }
+}
